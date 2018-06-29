@@ -4,8 +4,8 @@ class RecipesController < ApplicationController
     render "index.json.jbuilder"
   end
 
-  def one_recipe_method
-    @recipe = Recipe.first
-    render "one_recipe.json.jbuilder"
+  def show
+    @recipe = Recipe.find_by(id: params[:id])
+    render "show.json.jbuilder"
   end
 end
