@@ -1,6 +1,14 @@
 class RecipesController < ApplicationController
   def index
     @recipes = Recipe.all
+
+    search_terms = params[:q]
+    if search_terms
+      @recipes = @recipes.where("title ILIKE ?", "%#{search_terms}%")
+    end
+
+    @recipes = @recipes.order(:id => :desc)
+    
     render "index.json.jbuilder"
   end
 
