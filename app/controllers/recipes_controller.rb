@@ -17,7 +17,8 @@ class RecipesController < ApplicationController
       title: params[:input_title],
       chef: params[:input_chef],
       ingredients: params[:input_ingredients],
-      directions: params[:input_directions]
+      directions: params[:input_directions],
+      user_id: current_user.id
     )
     @recipe.save
     render "show.json.jbuilder"
