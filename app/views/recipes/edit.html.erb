@@ -1,5 +1,7 @@
 <h1>Edit recipe</h1>
-<%= form_tag "/recipes/#{@recipe.id}", method: :patch do %>
+<%#= form_tag "/recipes/#{@recipe.id}", method: :patch do %>
+<form action="/recipes/<%= @recipe.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
   <div>
     Title: <input type="text" name="title" value="<%= @recipe.title %>">
   </div>
@@ -19,4 +21,5 @@
     Image: <input type="text" name="image_url" value="<%= @recipe.image_url %>">
   </div>
   <input type="submit" value="Update recipe">
-<% end %>
+</form>
+<%# end %>
