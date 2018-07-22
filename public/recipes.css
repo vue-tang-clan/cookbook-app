@@ -2,3 +2,8 @@ body {
   font-family: Futura,"Trebuchet MS",Arial,sans-serif;
   background-image: url('purty_wood.png');
 }
+
+.logo {
+  font-family: 'Monoton', cursive;
+  font-size: 5em;
+}
