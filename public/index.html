@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="recipes.css">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <title>Hello, world!</title>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
@@ -53,88 +54,8 @@
       <h1>All recipes</h1>
 
       <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="http://swansonhealthcenter.com/wp-content/uploads/2011/07/Egg.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Raw Eggs</h5>
-              <p class="card-text">
-                Ingredients: Chicken
-                Directions: Squeeze the chicken
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="http://swansonhealthcenter.com/wp-content/uploads/2011/07/Egg.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Raw Eggs</h5>
-              <p class="card-text">
-                Ingredients: Chicken
-                Directions: Squeeze the chicken
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="http://swansonhealthcenter.com/wp-content/uploads/2011/07/Egg.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Raw Eggs</h5>
-              <p class="card-text">
-                Ingredients: Chicken
-                Directions: Squeeze the chicken
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="http://swansonhealthcenter.com/wp-content/uploads/2011/07/Egg.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Raw Eggs</h5>
-              <p class="card-text">
-                Ingredients: Chicken
-                Directions: Squeeze the chicken
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="http://swansonhealthcenter.com/wp-content/uploads/2011/07/Egg.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Raw Eggs</h5>
-              <p class="card-text">
-                Ingredients: Chicken
-                Directions: Squeeze the chicken
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="http://swansonhealthcenter.com/wp-content/uploads/2011/07/Egg.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Raw Eggs</h5>
-              <p class="card-text">
-                Ingredients: Chicken
-                Directions: Squeeze the chicken
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
+      </div>
 
     </div>
 
@@ -147,3 +68,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<template id="recipe-card">
+  <div class="col-md-4">
+    <div class="card">
+      <img class="card-img-top" src="http://swansonhealthcenter.com/wp-content/uploads/2011/07/Egg.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Raw Eggs</h5>
+        <p class="card-text">
+          Ingredients: Chicken
+          Directions: Squeeze the chicken
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</template>
