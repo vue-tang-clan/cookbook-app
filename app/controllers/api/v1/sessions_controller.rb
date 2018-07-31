@@ -12,7 +12,7 @@ class Api::V1::SessionsController < ApplicationController
       )
       render json: {jwt: jwt, email: user.email}, status: :created
     else
-      render json: {}
+      render json: {}, status: :unauthorized
     end
   end
 end
