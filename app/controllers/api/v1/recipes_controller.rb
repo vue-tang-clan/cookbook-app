@@ -21,8 +21,11 @@ class Api::V1::RecipesController < ApplicationController
       prep_time: params[:prep_time],
       user_id: 1
     )
-    @recipe.save
-    render "show.json.jbuilder"
+    if @recipe.save
+      render "show.json.jbuilder"
+    else
+      render json: { errors: @recipe.errors.full_messages }, status: :bad_request
+    end
   end
 
   def show
