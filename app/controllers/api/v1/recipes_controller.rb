@@ -19,7 +19,7 @@ class Api::V1::RecipesController < ApplicationController
       ingredients: params[:input_ingredients],
       directions: params[:input_directions],
       prep_time: params[:prep_time],
-      user_id: current_user.id
+      user_id: 1
     )
     @recipe.save
     render "show.json.jbuilder"
